@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dip"
+    tools:context=".LoginActivity"
+    android:background="#000000">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/header_small"
+        android:maxHeight="20dp"
+        android:visibility="visible"
+        android:layout_marginTop="-30dp"
+        android:background="#000000"
+        android:id="@+id/imageView" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:id="@+id/linearLayout">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Native Language: "
+            android:textAllCaps="true"
+            android:id="@+id/textL"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/mygreen"
+            android:textSize="30sp"/>
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:background="@color/darkpurple"
+            android:prompt="@string/spinner_title"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Foreign Language: "
+            android:textAllCaps="true"
+            android:id="@+id/textF"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/mygreen"
+            android:textSize="30sp"/>
+        <Spinner
+            android:id="@+id/spinnerTwo"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:background="@color/darkpurple" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/buttonshape"
+        android:minHeight="56dp"
+        android:minWidth="132dp"
+        android:text="Search for users"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/buttonshape"
+        android:minHeight="20dp"
+        android:minWidth="50dp"
+        android:text="logout"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/imageView" />
+
+
+</RelativeLayout>

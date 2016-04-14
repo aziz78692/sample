@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/gradient_background">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/header_small"
+        android:maxHeight="20dp"
+        android:visibility="visible"
+        android:layout_marginTop="-30dp"
+        android:background="#000000" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usersListView"
+        android:divider="#000000"
+        android:dividerHeight="3dp"
+        android:drawSelectorOnTop="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false" />
+
+    <Button
+        android:id="@+id/switchModeButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="-444dp"
+        android:layout_gravity="right"
+        android:text="SWITCH MODE"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
